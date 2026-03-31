@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.wokolskidashboard.ui.components.WokulskiButton
+import com.example.wokolskidashboard.ui.components.WokulskiTextField
 import com.example.wokolskidashboard.ui.theme.WokolskiDashBoardTheme
 
 class MainActivity : ComponentActivity() {
@@ -32,6 +34,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
+
     Text(
         text = "Hello $name!",
         modifier = modifier
