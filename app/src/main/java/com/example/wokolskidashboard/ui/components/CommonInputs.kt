@@ -29,7 +29,7 @@ fun WokulskiTextField(
         onValueChange = onValueChange,
         label = {Text(label)},
         modifier = modifier
-            .fillMaxSize(),
+            .fillMaxWidth(),
         singleLine = true
     )
 
