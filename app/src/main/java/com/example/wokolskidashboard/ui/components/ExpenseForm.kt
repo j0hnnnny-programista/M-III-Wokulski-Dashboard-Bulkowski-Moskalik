@@ -54,13 +54,3 @@ fun ExpenseForm(onAddExpense: (String, Double, Boolean) -> Unit) {
         })
     }
 }
-
-@Preview
-@Composable
-fun ExpenseFormPreview() {
-    WokolskiDashBoardTheme {
-        Surface {
-            ExpenseForm(onAddExpense = { _, _, _ -> })
-        }
-    }
-}
