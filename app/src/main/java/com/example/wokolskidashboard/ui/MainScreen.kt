@@ -28,3 +28,32 @@ fun MainScreen() {
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
             BalanceHeader(balance = balance)
+
+            IncomeForm(onAddIncome = { n, k ->
+                transactions.add(0, Transaction(nazwa = n, kwota = k, isExpence = false, isUnnecesary = false))
+            })
+
+            HorizontalDivider()
+
+            ExpenseForm(onAddExpense = { n, k, u ->
+                transactions.add(0, Transaction(nazwa = n, kwota = k, isExpence = true, isUnnecesary = u))
+            })
+
+            LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                items(transactions) { item ->
+                    TransactionCard(transaction = item)
+                }
+            }
+        }
+    }
+}
+
+@Preview
+@Composable
+fun MainScreenPreview() {
+    WokolskiDashBoardTheme {
+        Surface {
+            MainScreen()
+        }
+    }
+}
