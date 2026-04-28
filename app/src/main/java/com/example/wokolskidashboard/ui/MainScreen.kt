@@ -24,7 +24,7 @@ fun MainScreen() {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
-                .padding(16.dp),
+                .padding(8.dp),
             verticalArrangement = Arrangement.spacedBy(5.dp)
         ) {
             BalanceHeader(balance = balance)

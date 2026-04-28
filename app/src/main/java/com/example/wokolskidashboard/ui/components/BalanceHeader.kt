@@ -21,7 +21,7 @@ fun BalanceHeader(balance: Double) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp),
+            .padding(8.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(text = "Aktualne Saldo", style = MaterialTheme.typography.labelLarge)

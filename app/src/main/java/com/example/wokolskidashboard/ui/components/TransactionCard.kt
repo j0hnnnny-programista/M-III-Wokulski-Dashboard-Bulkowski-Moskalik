@@ -28,7 +28,7 @@ fun TransactionCard(transaction: Transaction) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp),
+                .padding(4.dp),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Column {
